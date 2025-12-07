@@ -40,21 +40,20 @@ export const Roster: React.FC = () => {
 
     stats.push(
       `Age: ${player.age}`,
-      `EXP: ${player.yearsOfExperience}`,
-      `Potential: ${player.potential}`,
-      `FWD: ${player.forwardRating}`,
-      `DEF: ${player.defenderRating}`,
-      `G: ${player.goalieRating}`,
-      `GP: ${player.seasonStats.gamesPlayed}`,
+      `Experience: ${player.yearsOfExperience}`,
+      `Forward Rating: ${player.forwardRating}`,
+      `Defender Rating: ${player.defenderRating}`,
+      `Goalie Rating: ${player.goalieRating}`,
+      `Games Played: ${player.seasonStats.gamesPlayed}`,
       `Goals: ${player.seasonStats.goals}`,
-      `A: ${player.seasonStats.assists}`,
-      `P: ${player.seasonStats.points}`,
+      `Assists: ${player.seasonStats.assists}`,
+      `Points: ${player.seasonStats.points}`,
       `Legacy: ${player.careerStats.legacy || 0}`
     );
 
     if (player.position === 'Goalie') {
       stats.push(`Saves: ${player.seasonStats.saves || 0}`);
-      stats.push(`GA: ${player.seasonStats.goalsAgainst || 0}`);
+      stats.push(`Goals Against: ${player.seasonStats.goalsAgainst || 0}`);
     }
 
     return stats;

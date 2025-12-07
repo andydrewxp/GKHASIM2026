@@ -2,6 +2,22 @@
 
 All notable changes to the Googus Knee Hockey Association (GKHA) simulator project will be documented in this file.
 
+## [0.9.20] - 2025-12-07
+
+### Changed - Hidden Player Potential from User Interface
+
+- Removed player potential display from the roster view to keep development potential hidden from users
+- Player potential values (Bust, Standard, Star, GOAT) are still tracked internally and affect player development, but are no longer visible in the UI
+- **Component Changes:**
+  - Updated [Roster.tsx:41-52](src/components/Roster.tsx#L41-L52): Removed "Potential" field from getDetailedStats function that displays player information when expanded
+
+### Changed - Expanded Player Stats to Use Full Words
+
+- Updated the roster expanded player view to display full words instead of abbreviations for better readability
+- Changed abbreviations to full words: EXP → Experience, FWD → Forward Rating, DEF → Defender Rating, G → Goalie Rating, GP → Games Played, A → Assists, P → Points, GA → Goals Against
+- **Component Changes:**
+  - Updated [Roster.tsx:41-57](src/components/Roster.tsx#L41-L57): Modified getDetailedStats function to use full descriptive labels instead of abbreviations
+
 ## [0.9.19] - 2025-12-07
 
 ### Added - Welcome Posts on Game Start
