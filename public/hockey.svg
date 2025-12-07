@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+  <defs>
+    <style>
+      .stick-light { fill: #5dade2; }
+      .stick-dark { fill: #3498db; }
+      .stick-blade { fill: #bdc3c7; }
+      .outline { fill: #000000; }
+    </style>
+  </defs>
+
+  <!-- Left hockey stick -->
+  <g>
+    <!-- Outer outline -->
+    <path class="outline" d="M 90 60 L 120 50 L 180 280 L 140 360 L 60 390 L 50 370 L 110 350 L 140 280 L 80 70 Z"/>
+    <!-- Inner fill - handle -->
+    <path class="stick-dark" d="M 95 70 L 110 65 L 165 280 L 135 350 L 70 375 L 75 365 L 125 345 L 150 285 Z"/>
+    <!-- Blade -->
+    <path class="stick-blade" d="M 135 350 L 165 280 L 180 320 L 150 380 L 70 410 L 60 390 Z"/>
+  </g>
+
+  <!-- Right hockey stick -->
+  <g>
+    <!-- Outer outline -->
+    <path class="outline" d="M 422 60 L 392 50 L 332 280 L 372 360 L 452 390 L 462 370 L 402 350 L 372 280 L 432 70 Z"/>
+    <!-- Inner fill - handle -->
+    <path class="stick-dark" d="M 417 70 L 402 65 L 347 280 L 377 350 L 442 375 L 437 365 L 387 345 L 362 285 Z"/>
+    <!-- Blade -->
+    <path class="stick-blade" d="M 377 350 L 347 280 L 332 320 L 362 380 L 442 410 L 452 390 Z"/>
+  </g>
+
+  <!-- Intersection/cross point -->
+  <ellipse class="stick-blade" cx="256" cy="340" rx="30" ry="25"/>
+</svg>
