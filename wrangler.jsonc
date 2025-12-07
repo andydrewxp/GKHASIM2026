@@ -5,7 +5,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "gkha2026",
-	"main": "worker/index.ts",
 	"compatibility_date": "2025-11-21",
 	"assets": {
 		"not_found_handling": "single-page-application"
